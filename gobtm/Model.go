@@ -10,15 +10,15 @@ import(
 )
 
 type BTM struct{
-	K		int						// number of topics
-	W 		float64					// vocabulary size
-	Iter 	int						// maximum number of iteration of Gibbs Sampling
-	Alpha	float64					// hyperparameters of p(z)
-	Beta 	float64					// hyperparameters of p(w|z)
-	Pw_b	[]float64				// word distribution TF (term-freq) / dictionary term
-	Nb_z	[]float64				// n(b|z), size K*1 (theta)
-	Nw_z	[][]float64				// n(w,z), size K*W (phi)
-	BS 		map[string]*Biterm		// biterm distribution
+	K	int				// number of topics
+	W 	float64				// vocabulary size
+	Iter 	int				// maximum number of iteration of Gibbs Sampling
+	Alpha	float64				// hyperparameters of p(z)
+	Beta 	float64				// hyperparameters of p(w|z)
+	Pw_b	[]float64			// word distribution TF (term-freq) / dictionary term
+	Nb_z	[]float64			// n(b|z), size K*1 (theta)
+	Nw_z	[][]float64			// n(w,z), size K*W (phi)
+	BS 	map[string]*Biterm		// biterm distribution
 }
 
 
